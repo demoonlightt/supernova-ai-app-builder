@@ -2,7 +2,7 @@ import react from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Zap } from "lucide-react";
-import { Button } from "@base-ui/react";
+import { Button } from "@/components/ui/button";
 
 import {
   ClerkProvider,
@@ -25,7 +25,7 @@ const Header = () => {
             alt="Supernova Logo"
             width={100}
             height={100}
-            className="h-9 w-auto rounder-md"
+            className="h-[28px] w-auto rounder-md"
           />
         </Link>
 
@@ -63,7 +63,9 @@ const Header = () => {
             <SignUpButton mode="modal">
               <Button
                 size="sm"
-                className="inline-flex h-8 items-center gap-1.5 rounded-full bg-white px-4 text-[13px] font-semibold text-black hover:bg-white/90 active:scale-95"
+                className={
+                  "inline-flex h-8 items-center gap-1.5 rounded-full bg-white px-4 text-[13px] font-semibold text-black hover:bg-white/90 active:scale-95"
+                }
               >
                 Get Started
                 <ArrowRight className="h-3 w-3 opacity-60" />
