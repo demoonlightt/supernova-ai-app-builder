@@ -335,6 +335,62 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* PRICING SECTION */}
+      <section className="px-4 pb-32">
+        <div className="mx-auto mb-14 max-w-3xl text-center">
+          <SectionLabel>Supernova Pro</SectionLabel>
+          <SectionHeading gray="Starting free" pink="scale when ready" />
+
+          <p className="mx-auto mt-4 max-w-sm text-sm text-white/35">
+            Upgrade to Supernova Pro to unlock unlimited prompts, faster AI
+            recovery, and seamless production exports.
+          </p>
+        </div>
+
+        <div className="mx-auto max-w-3xl"></div>
+      </section>
+
+      <section
+        className="relative mx-auto mb-32 max-w-5xl overflow-hidden
+      rounded-2xl border border-white/8 px-10 py-24 text-center"
+      >
+        <HoleBackground
+          strokeColor="rgba(255,255,255,0.05)"
+          className="absolute inset-0 h-full w-full"
+          style={{
+            maskImage:
+              "linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 50%, transparent 100%)",
+            WebkitMaskImage:
+              "linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 50%, transparent 100%)",
+          }}
+        />
+
+        <SectionHeading gray="Build your spark" pink="for free!" />
+
+        <p className="mx-auto mt-4 max-w-sm text-sm text-white/35">
+          Get 10 free generations on sign up. No credit card required.
+          <br />
+          Upgrade when you&apos;re ready.
+        </p>
+
+        <SignInButton mode="modal">
+          <Button
+            size="lg"
+            className="bg-white text-black px-4 py-2 rounded-full font-medium mt-10"
+          >
+            Get started free
+            <ChevronRight className="h-4 w-4"></ChevronRight>
+          </Button>
+        </SignInButton>
+      </section>
+
+      <footer
+        className="relative z-10 border-t border-white/7 py-12 mx-auto px-6 
+      flex flex-wrap items-center justify-center text-stone-400"
+      >
+        Made with ｡ ₊°༺❤︎༻°₊ ｡ by DeMoonlightt
+      </footer>
     </main>
   );
 }
